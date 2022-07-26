@@ -41,6 +41,24 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Daisy",
+      "image": "https://cdn.britannica.com/68/123068-050-00390894/Crown-daisy.jpg",
+      "price": "10",
+      "id": 8
+    },
+    {
+      "name": "Daisy 2",
+      "image": "https://cdn.britannica.com/68/123068-050-00390894/Crown-daisy.jpg",
+      "price": "11",
+      "id": 9
+    },
+    {
+      "name": "Daisy 3",
+      "image": "https://cdn.britannica.com/68/123068-050-00390894/Crown-daisy.jpg",
+      "price": "11",
+      "id": 10
     }
   ]
 }

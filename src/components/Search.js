@@ -1,6 +1,16 @@
 import React from "react";
 
-function Search() {
+function Search( {dataList, setDataList} ) {
+
+  const searchFunction = (e) => {
+    console.log('seaching happening')
+    console.log(e.target.value)
+    let val = e.target.value
+    setDataList(dataList.filter((item) => {
+      return (item.name.toLowerCase().includes(val.toLowerCase()) ? item : null)
+    }))
+  }
+
   return (
     <div className="searchbar">
       <label htmlFor="search">Search Plants:</label>
@@ -8,7 +18,7 @@ function Search() {
         type="text"
         id="search"
         placeholder="Type a name to search..."
-        onChange={(e) => console.log("Searching...")}
+        onChange={searchFunction}
       />
     </div>
   );
