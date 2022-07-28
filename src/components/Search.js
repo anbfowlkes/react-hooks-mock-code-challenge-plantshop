@@ -1,12 +1,13 @@
 import React from "react";
 
-function Search( {dataList, setDataList} ) {
+function Search( {dataList, setDataList, keepData} ) {
 
   const searchFunction = (e) => {
-    console.log('seaching happening')
-    console.log(e.target.value)
+    // console.log('seaching happening')
+    // console.log(e.target.value)
     let val = e.target.value
-    setDataList(dataList.filter((item) => {
+    let dat = [...keepData]
+    setDataList(dat.filter((item) => {
       return (item.name.toLowerCase().includes(val.toLowerCase()) ? item : null)
     }))
   }
